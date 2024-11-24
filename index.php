@@ -1,0 +1,132 @@
+<?php
+include 'config.php';
+
+
+if (isset($_SESSION['success_message'])) {
+    echo '<p>' . $_SESSION['success_message'] . '</p>';
+    unset($_SESSION['success_message']); 
+}
+
+
+if (isset($_SESSION['error_message'])) {
+    echo '<p>' . $_SESSION['error_message'] . '</p>';
+    unset($_SESSION['error_message']); 
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+
+        function toggleSpecialtiesMenu() {
+            var menu = document.querySelector('.specialties-menu');
+            menu.parentElement.classList.toggle('show-specialties-menu');
+        }
+    </script>
+</head>
+<body id="inicio">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li class="specialties-btn" onclick="toggleSpecialtiesMenu()">Especialidades
+                    <div class="specialties-menu">
+                        <a href="#programacion">Programación</a>
+                        <a href="#electricidad">Electricidad</a>
+                        <a href="#automotor">Automotor</a>
+                        <a href="#electronica">Electrónica</a>
+                    </div>
+                </li>
+                <li><a href="inicio_sesion.php" class="login-btn">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <h1>Bienvenido a nuestra página</h1>
+    <main>
+        <section id="historia" class="specialty">
+            <h2>Historia</h2>
+            <p>Ex E.N.E.T. (Escuela Nacional de Enseñanza Técnica). Es decir, es una de las escuelas nacionales traspasadas al Estado Provincial durante la década de 1990.
+
+Entonces se convirtió en IPEM 57.
+
+Luego fue reconvertida en IPET 57, para seguir siendo escuela técnica.
+
+Actualmente es una escuela técnica de nivel medio (escuela de nivel secundario), que ofrece la posibilidad de estudiar distintas especialidades, obteniendo el Título Técnico, con certificación a nivel Nacional. 
+
+Las especializaciones técnicas que otorga son en Automotores, Electricidad, Electrónica o Progrmacion.</p>
+        </section>
+
+        <section id="informacion" class="specialty">
+            <h2>Información</h2>
+            <p>Bienvenido a nuestra sección de información. Aquí encontrarás detalles sobre nuestro colegio, misión, visión y valores. Estamos comprometidos en brindar el mejor servicio a nuestros clientes y en mantener altos estándares de calidad.</p>
+            <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.9929145894016!2d-64.1658415253285!3d-31.414321296149833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2a430e1999b%3A0xc386bf8267afb442!2sInstituto%20Provincial%20de%20Educaci%C3%B3n%20T%C3%A9cnica%20(I.P.E.T.)%20N%C2%BA%2057%20%22Comodoro%20Mart%C3%ADn%20Rivadavia%22!5e0!3m2!1ses-419!2sar!4v1726436851572!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="programacion" class="specialty">
+            <h2>Programación</h2>
+            <p>En la especialidad de Programación aprenderás a desarrollar aplicaciones, sitios web y sistemas informáticos utilizando lenguajes de programación como Python, Java, PHP, entre otros.</p>
+            <img src="img/programacion.png" alt="Programación">
+            <a href="#inicio" class="btn-back">Volver al Inicio</a>
+            <a href="mas_info_programacion.html" class="btn-more">Ver Más</a>
+        </section>
+
+        <section id="electricidad" class="specialty">
+            <h2>Electricidad</h2>
+            <p>En la especialidad de Electricidad estudiarás los principios y técnicas de la electricidad, así como el mantenimiento e instalación de sistemas eléctricos.</p>
+            <img src="img/electricidad.jfif" alt="Electricidad">
+            <a href="#inicio" class="btn-back">Volver al Inicio</a>
+            <a href="mas_info_electricidad.html" class="btn-more">Ver Más</a>
+        </section>
+
+        <section id="automotor" class="specialty">
+            <h2>Automotor</h2>
+            <p>En la especialidad de Automotor, aprenderás el mantenimiento y reparación de vehículos, así como los sistemas mecánicos y eléctricos involucrados.</p>
+            <img src="img/automotor.jpg" alt="Automotor">
+            <a href="#inicio" class="btn-back">Volver al Inicio</a>
+            <a href="mas_info_automotor.html" class="btn-more">Ver Más</a>
+        </section>
+
+        <section id="electronica" class="specialty">
+            <h2>Electrónica</h2>
+            <p>En Electrónica aprenderás a diseñar, analizar y reparar circuitos electrónicos, así como a trabajar con dispositivos electrónicos modernos.</p>
+            <img src="img/electronica.jfif" alt="Electrónica">
+            <a href="#inicio" class="btn-back">Volver al Inicio</a>
+            <a href="mas_info_electronica.html" class="btn-more">Ver Más</a>
+        </section>
+
+        <section id="contacto" class="specialty">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos a través del siguiente formulario o directamente a nuestro correo electrónico.</p>
+            <form action="enviar_contacto.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <a href="#inicio" class="btn-back">Volver al Inicio</a>
+        </section>
+    </main>
+    <footer>
+    <ul class="social-links">
+        <li><a href="https://www.instagram.com/ipet_57/?hl=es" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/Ipet57?locale=es_LA" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+    </ul>
+</footer>
+
+</body>
+</html>

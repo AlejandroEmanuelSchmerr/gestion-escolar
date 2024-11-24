@@ -1,0 +1,165 @@
+
+body, h1, h2, p, form, ul, li, a, iframe {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/pexels-ann-h-45017-1762851.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+
+h1, h2 {
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+form {
+    background-color: rgba(0, 123, 255, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 5px 0;
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+input[type="text"], input[type="password"], select {
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: rgba(0, 123, 255, 0.8); 
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(0, 123, 255, 1); 
+}
+
+
+.btn-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #fcfdff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+
+.table-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0, 123, 255, 0.8); 
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgba(0, 123, 255, 1); 
+}
+
+
+.info-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+
+.especialidades-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.especialidades-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.especialidades-section li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .info-section, .map-container, .especialidades-section {
+        margin-top: 10px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}

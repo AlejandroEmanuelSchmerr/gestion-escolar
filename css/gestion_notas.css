@@ -1,0 +1,152 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; 
+    color: #444; 
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+
+h1 {
+    color: #3498db; 
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+
+form {
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+form textarea[type="comentario"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #3498db; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s; 
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db; 
+    color: white; 
+}
+
+td a {
+    text-decoration: none;
+    color: #3498db; 
+}
+
+td a:hover {
+    color: #2980b9; 
+}
+
+
+td a:last-child {
+    color: #e74c3c; 
+}
+
+td a:last-child:hover {
+    color: #c0392b; 
+}
+
+
+header {
+    background-color: #3498db; 
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+    flex-wrap: wrap; 
+}
+
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px; 
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #2980b9; 
+    color: #fff; 
+}
+
+
+nav a.btn {
+    background-color: #e74c3c; 
+    color: #fff;
+    padding: 8px 15px; 
+    border: none;
+    font-weight: normal;
+}
+
+
+nav a.btn:hover,
+nav a.btn:focus {
+    background-color: #c0392b; 
+}

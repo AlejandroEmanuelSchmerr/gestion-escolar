@@ -1,0 +1,103 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/pexels-tirachard-kumtanom-112571-733857.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0; 
+    height: 100%; 
+    overflow: auto; 
+}
+
+
+.container {
+    max-width: 600px;
+    width: 90%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 20px auto; 
+}
+
+
+h1 {
+    color: #28a745;
+    font-size: 2.5em; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    color: #000; 
+}
+
+input[type="text"], input[type="date"], input[type="number"], select, input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #fff; 
+    color: #000; 
+    box-sizing: border-box; 
+}
+
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer; 
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+.alert {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+}

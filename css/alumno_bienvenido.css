@@ -1,0 +1,302 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #f5f7fa;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background: #00796b;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    background: #00796b;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+nav {
+    background: #009688;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 0.875rem;
+}
+
+nav a:hover {
+    background-color: #4db6ac;
+    transform: scale(1.05);
+}
+
+main {
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: #004d40;
+    border-bottom: 2px solid #00796b;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin: 0.5rem 0;
+    line-height: 1.8;
+    font-size: 0.875rem;
+}
+
+.btn {
+    background: #0288d1;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.btn:hover {
+    background: #03a9f4;
+}
+
+.btn-specialty {
+    background-color: #ff9800;
+}
+
+.btn-specialty:hover {
+    background-color: #ffb74d;
+}
+
+.btn-nav {
+    background-color: #009688;
+}
+
+.btn-nav:hover {
+    background-color: #4db6ac;
+}
+
+.btn-back {
+    background-color: #0288d1;
+}
+
+.btn-back:hover {
+    background-color: #03a9f4;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #b2dfdb;
+    padding: 0.5rem;
+    text-align: left;
+    font-size: 0.875rem;
+}
+
+.table th {
+    background: #b2ebf2;
+    color: #004d40;
+}
+
+footer {
+    background: #00796b;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #0288d1;
+    color: #fff;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+    font-size: 0.875rem;
+}
+
+.btn-download:hover {
+    background: #03a9f4;
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    color: #004d40;
+    border-bottom: 2px solid #00796b;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    margin: 1rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+table th, table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #b2dfdb;
+}
+
+table th {
+    background: #b2ebf2;
+    color: #004d40;
+}
+
+table td {
+    background: #ffffff;
+}
+
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #b2dfdb;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    box-sizing: border-box;
+}
+
+input[readonly] {
+    background-color: #e0f2f1;
+    cursor: not-allowed;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-download {
+    background: #0288d1;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.btn-download:hover {
+    background: #03a9f4;
+}
+
+.btn-modify, .btn-save, .btn-cancel {
+    background-color: #0288d1;
+}
+
+.btn-modify:hover, .btn-save:hover, .btn-cancel:hover {
+    background-color: #03a9f4;
+}
+
+.btn-save {
+    background-color: #ff9800;
+}
+
+.btn-save:hover {
+    background-color: #ffb74d;
+}
+
+.btn-cancel {
+    background-color: #f44336;
+}
+
+.btn-cancel:hover {
+    background-color: #e57373;
+}
+
+.table-notes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table-notes th, .table-notes td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #b2dfdb;
+}
+
+.table-notes th {
+    background: #b2ebf2;
+    color: #004d40;
+}
+
+.table-notes td {
+    background: #ffffff;
+}
+
+.table-notes tr:nth-child(even) {
+    background-color: #f1f8e9;
+}
+
+.hidden {
+    display: none;
+}
