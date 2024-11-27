@@ -87,6 +87,12 @@ Este proyecto es un **Sistema de Gestión Escolar** diseñado para administrar e
 
 ---
 
+## Pendientes
+
+El proyecto aún está en desarrollo y faltan algunas funcionalidades por implementar. Es importante estar pendiente de los próximos cambios y actualizaciones para completar el sistema.
+
+---
+
 ## Agradecimientos
 
 Gracias por revisar y considerar mi proyecto. Si tienes dudas o necesitas soporte, puedes contactarme en **emanuelschmer@hotmail.com**.  
