@@ -87,7 +87,7 @@ Este proyecto es un **Sistema de Gestión Escolar** diseñado para administrar e
 
 ---
 
-## Pendientes
+## Estado
 
 El proyecto aún está en desarrollo y faltan algunas funcionalidades por implementar. Es importante estar pendiente de los próximos cambios y actualizaciones para completar el sistema.
 
