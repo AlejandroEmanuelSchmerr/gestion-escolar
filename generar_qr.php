@@ -62,8 +62,7 @@ if ($result_check->num_rows == 0) {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com'; 
             $mail->SMTPAuth = true;
-            $mail->Username = 'emanuelschmer777@gmail.com';  
-            $mail->Password = 'ncvb zoqn ewpo liab';      
+
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
